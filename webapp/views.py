@@ -51,3 +51,26 @@ class AnnouncementDelete(DeleteView):
     #     return self.get_object().author == self.request.user or super().has_permission()
 
 
+class Moderate(ListView):
+    template_name = 'moderate.html'
+    model = Announcement
+    context_object_name = 'announcements'
+
+    def get_queryset(self, *args, **kwargs):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(moderate=True)
+        return queryset
+
+
+class NotModerate(ListView):
+    template_name = 'index.html'
+    model = Announcement
+    context_object_name = 'announcements'
+
+    def get_queryset(self):
+        queryset = queryset = super().get_queryset()
+        queryset = queryset.filter(moderate=False)
+        return queryset
+
+
+
