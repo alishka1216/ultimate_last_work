@@ -1,4 +1,37 @@
-# ultimate_last_work
-# ultimate_last_work
-# ultimate_last_work
-# ultimate_last_work
+# KitchenBot
+Для запуска проекта установите python версии 3.7 и выше, pip и virualenv
+
+Поссле клонирования перейдите в склонированную папку и вывполните следующие команды:
+
+Создайте виртуальное окружение командой
+```bash
+python3 -m venv venv
+```
+
+Активируйте виртуальное окружение командой
+```bash
+source venv/bin/activate
+```
+
+Перейдите в папку server
+```bash
+cd server
+```
+
+Установите зависимости командой
+
+```bash
+pip install -r requirements.txt
+```
+
+Примените миграции командой
+```bash
+./manage.py migrate
+```
+
+изменил настройки для postgress
+
+изменил поля баз данных и сикрет кей
+
+данные для пользования базы данных находяться в файле .env
+
