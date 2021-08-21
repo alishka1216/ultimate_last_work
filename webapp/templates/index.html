@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+        <li><a href="{% url "announcement-add" %}">Создать объявление</a></li>
+{% endblock menu %}
+
+{%  block content %}
+    {% for announcement in announcements %}
+        <div class="main__card_row-start">
+    <div class="card" style="width: 38rem; margin-top: 50px;">
+  <img src="{{ announcement.avatar.url }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a href="{% url "announcement-view" announcement.id %}">Название: {{ announcement.title }}</a></h5>
+    <p class="card-text">Описание: {{ announcement.description }}</p>
+        <p>Автор объявления <a href="{% url 'announcement-view' announcement.pk %}">{{ user.username }}</a></p></p>
+    <a href="{% url "announcement-update" announcement.id %}" class="btn btn-primary">изменить</a>
+        <a href="{% url "announcement-delete" announcement.id %}" class="btn btn-primary">Удалить</a>
+          {% endfor %}
+  </div>
+</div>
+    </div>
+{% endblock content %}

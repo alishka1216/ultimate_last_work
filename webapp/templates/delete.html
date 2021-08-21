@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Вы уверены, что хотите удалить объявление? {{ announcements.title }}</h2>
+    <form action="{% url 'announcement-delete' announcements.id %}" method="POST">
+        {% csrf_token %}
+        <input class="btn btn-primary" type="submit" value="да">
+    </form>
+    <a href="{% url "announcement-view" announcements.id %}"> <input class="btn btn-primary mt-2" type="submit" value="отмена"></a>
+{% endblock content %}

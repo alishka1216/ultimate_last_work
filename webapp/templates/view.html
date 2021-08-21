@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+{% block nav%}
+{#        <li class="nav-item">#}
+{#        <a class="nav-link" href="{% url 'announcement-add' announcement.id %}">Добавить фото</a><br>#}
+{#        </li>#}
+{#        <li class="nav-item">#}
+{#        <a class="nav-link" href="{% url 'announcement-update' announcement.id %}">Изменить альбом</a>#}
+{#        </li>#}
+{#        <li class="nav-item">#}
+{#        <a class="nav-link" href="{% url 'announcement-delete' announcement.id %}">Удалить альбом</a>#}
+{#        </li>#}
+{% endblock %}
+
+
+{%  block content %}
+
+
+    <p>Название: {{ announcements.title }}</p>
+    <p>Описание: {{ announcements.description }}</p>
+    <p>Дата создания: {{ announcements.created_ad }}</p>
+    <p>Дата редактирования: {{ announcements.update_ad }}</p>
+    <p>Дата публикации: {{ announcements.edited_at }}</p>
+    {% if announcements.avatar %}
+        <img class="avatar" src="{{ announcements.avatar.url }}" width="250" height="250" alt="user picture">
+    {% endif %}
+{% endblock content %}
+

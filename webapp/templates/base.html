@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url "announcement-list" %}" >Список объявлений</a>
+      </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item"><a class="nav-link " href="{% url "announcement-add" %}">Создать объявление</a></li>
+    {% endif %}
+    {% block  nav%}{% endblock %}
+    {% if user.is_authenticated %}
+        <li class="nav-item"><a class="nav-link " href="{% url "accounts:user-detail" user.id%}">Личный кабинет</a></li>
+    {% endif %}
+      {% if user.is_authenticated %}
+          <li class="menu-right"><a href="{% url 'accounts:logout' %}?next={{ request.get_full_path }}" class="nav-link">Выход</a></li>
+          {% block menu_links %}{% endblock %}
+       {% else %}
+           <li class="menu-right"><a href="{% url 'accounts:login' %}?next={{ request.get_full_path }}" class="nav-link">Вход</a></li>
+            <a class="nav-link">anonymous online</a>
+      {% endif %}
+    </ul>
+
+</nav>
+ {% block content %}
+ {% endblock content %}
+</body>
+</html>
