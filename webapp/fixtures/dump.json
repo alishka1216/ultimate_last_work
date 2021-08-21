@@ -1,0 +1,172 @@
+[
+{
+  "model": "webapp.announcement",
+  "pk": 2,
+  "fields": {
+    "user": null,
+    "title": "dasd",
+    "description": "dsad",
+    "avatar": "avatars/Снимок_экрана_от_2021-08-02_16-26-34_4jz1srD.png",
+    "price": "2.00",
+    "moderate": true,
+    "category": "meal",
+    "created_ad": "2021-08-21T10:17:04.081Z",
+    "update_ad": "2021-08-21T10:17:04.081Z",
+    "edited_at": "2021-08-21T10:17:04.081Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 3,
+  "fields": {
+    "user": null,
+    "title": "5555555",
+    "description": "5555555",
+    "avatar": "avatars/VKontakte-Rossiya-Anonimnost-6_Wq8lrDw.jpg",
+    "price": "2.00",
+    "moderate": false,
+    "category": "phones",
+    "created_ad": "2021-08-21T10:17:36.445Z",
+    "update_ad": "2021-08-21T10:24:45.170Z",
+    "edited_at": "2021-08-21T10:24:45.170Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 4,
+  "fields": {
+    "user": null,
+    "title": "gtg",
+    "description": "scdf",
+    "avatar": "avatars/Снимок_экрана_от_2021-04-30_22-43-30_ONk0Cj7.png",
+    "price": null,
+    "moderate": false,
+    "category": "phones",
+    "created_ad": "2021-08-21T10:57:02.028Z",
+    "update_ad": "2021-08-21T10:57:02.028Z",
+    "edited_at": "2021-08-21T10:57:02.028Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "title": "dsad",
+    "description": "dasd",
+    "avatar": "avatars/Снимок_экрана_от_2021-07-08_15-20-29_gkDYiey.png",
+    "price": "2.00",
+    "moderate": false,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:01:22.481Z",
+    "update_ad": "2021-08-21T11:01:22.481Z",
+    "edited_at": "2021-08-21T11:01:22.481Z",
+    "moderated_at": "2021-08-21T11:01:20Z"
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 6,
+  "fields": {
+    "user": null,
+    "title": "alishka",
+    "description": "alishka",
+    "avatar": "avatars/Снимок_экрана_от_2021-06-28_16-13-08_egHl5vu.png",
+    "price": "23.00",
+    "moderate": true,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:32:54.845Z",
+    "update_ad": "2021-08-21T11:32:54.845Z",
+    "edited_at": "2021-08-21T11:32:54.845Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 7,
+  "fields": {
+    "user": null,
+    "title": "11111111111",
+    "description": "11111111111",
+    "avatar": "avatars/Снимок_экрана_от_2021-07-08_15-20-29_QZZNcTN.png",
+    "price": "1.00",
+    "moderate": false,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:33:15.651Z",
+    "update_ad": "2021-08-21T11:33:15.651Z",
+    "edited_at": "2021-08-21T11:33:15.651Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 8,
+  "fields": {
+    "user": null,
+    "title": "1111111",
+    "description": "11111111",
+    "avatar": "avatars/Снимок_экрана_от_2021-07-08_15-20-29_Pi7Eomi.png",
+    "price": "1111.00",
+    "moderate": true,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:33:28.687Z",
+    "update_ad": "2021-08-21T11:33:28.687Z",
+    "edited_at": "2021-08-21T11:33:28.687Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 9,
+  "fields": {
+    "user": null,
+    "title": "666666666666666666",
+    "description": "66666666666",
+    "avatar": "avatars/Снимок_экрана_от_2021-06-28_16-13-08_VhKJEEw.png",
+    "price": "312.00",
+    "moderate": true,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:33:49.917Z",
+    "update_ad": "2021-08-21T11:33:49.917Z",
+    "edited_at": "2021-08-21T11:33:49.917Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 10,
+  "fields": {
+    "user": null,
+    "title": "MASON'S",
+    "description": "MASONS",
+    "avatar": "avatars/Снимок_экрана_от_2021-04-30_22-41-36_fHEDAw3.png",
+    "price": null,
+    "moderate": true,
+    "category": "phones",
+    "created_ad": "2021-08-21T11:36:04.851Z",
+    "update_ad": "2021-08-21T11:36:04.851Z",
+    "edited_at": "2021-08-21T11:36:04.851Z",
+    "moderated_at": null
+  }
+},
+{
+  "model": "webapp.announcement",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "title": "MODERATE!!!",
+    "description": "dasdas",
+    "avatar": "avatars/Снимок_экрана_от_2021-07-08_15-20-29_QHeSUSy.png",
+    "price": null,
+    "moderate": true,
+    "category": "phones",
+    "created_ad": "2021-08-21T12:10:27.738Z",
+    "update_ad": "2021-08-21T12:11:25.869Z",
+    "edited_at": "2021-08-21T12:11:25.869Z",
+    "moderated_at": null
+  }
+}
+]
