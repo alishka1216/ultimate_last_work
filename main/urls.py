@@ -7,7 +7,8 @@ from webapp.views import (
     AnnouncementCreate,
     AnnouncementUpdate,
     AnnouncementDelete,
-    AnnouncementList
+    AnnouncementList,
+    Moderate
 )
 
 urlpatterns = [
@@ -17,5 +18,6 @@ urlpatterns = [
     path('ad/add/', AnnouncementCreate.as_view(), name='announcement-add'),
     path('ad/update/<int:pk>/', AnnouncementUpdate.as_view(), name='announcement-update'),
     path('ad/delete/<int:pk>/', AnnouncementDelete.as_view(), name='announcement-delete'),
+    path('moderated/', Moderate.as_view(), name='moderate-list'),
     path('accounts/', include('accounts.urls')),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
