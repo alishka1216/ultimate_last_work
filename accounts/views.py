@@ -20,7 +20,7 @@ def register_view(request, *args, **kwargs):
             user = form.save()
             login(request, user)
             form.save()
-            return redirect('album-list')
+            # return redirect('album-list')
     context['form'] = form
     return render(request, 'registration/register.html', context=context)
 

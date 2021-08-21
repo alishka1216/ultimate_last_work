@@ -10,7 +10,7 @@ class UserRegisterForm(UserCreationForm):
     email = forms.CharField(max_length=30, required=True)
 
     class Meta(UserCreationForm.Meta):
-        fields = ('username',  'first_name', 'last_name')
+        fields = ('username', 'email', 'first_name', 'last_name')
 
     def clean(self):
         super(UserRegisterForm, self).clean()
