@@ -37,11 +37,23 @@ pip install -r requirements.txt
 
 .env
 DEBUG=True
+
+
 SECRET_KEY=django-insecure-l87w5hu551=#rh)1bbtw+=&uar+_+0a4yzq&29&g^%82^rtnnh
+
+
 DB_NAME=postgres
+
+
 DB_USER=alishka
+
+
 DB_PASSWORD=admin
+
+
 DB_HOST=localhost
+
+
 DB_PORT=5432
 
 
