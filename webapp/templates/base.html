@@ -19,8 +19,10 @@
     {% if user.is_authenticated %}
         <li class="nav-item"><a class="nav-link " href="{% url "accounts:user-detail" user.id%}">Личный кабинет</a></li>
     {% endif %}
+    {% if user.is_authenticated %}
             <li class="nav-item"><a class="nav-link " href="{% url "moderate-list"%}">модератор лист</a></li>
-      {% if user.is_authenticated %}
+      {% endif %}
+        {% if user.is_authenticated %}
           <li class="menu-right"><a href="{% url 'accounts:logout' %}?next={{ request.get_full_path }}" class="nav-link">Выход</a></li>
           {% block menu_links %}{% endblock %}
        {% else %}
